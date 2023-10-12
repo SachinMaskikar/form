@@ -2,60 +2,117 @@
 <html lang="en">
 <head>
     <title>Document</title>
+    <style>
+     #popUpYes:hover{
+        background-color: yellow;
+    }
+    
+    .sachin{
+           color:rgb(32, 31, 31) ;
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+           border-radius: 25px;
+           background-color: rgb(150, 148, 148);
+           
+        
+    }
+    .xyz{
+        color: rgb(15, 15, 15);
+        font-family: cursive;
+        float:left;
+    }
+
+    .maski{
+        width: 40%;
+        background-color:goldenrod;
+        border-radius:40px;
+        padding-bottom: 10px;
+        /* padding-right: -50px; */
+    }
+    /* fieldset{
+        width: 30%;
+    } */
+    legend{
+        border :5px solid black;
+        border-radius:50px;
+        padding: 0px 20px;
+    }
+    input{
+        border-radius: 5px;
+        
+    }
+    
+    .personal_input{
+        float: right;
+        margin-right: 200px;
+    }
+    
+    </style>
 </head>
 <body>
+    <center>
     <form action="thank.html">
         
-        <fieldset>
-           <legend><h1>Personal Details</h1></legend> 
-        <label for="FirstName"> FirstName</label>
-        <input type="text" required placeholder="Ex:sachin" id="FirstName" name="FirstName"> 
+        <fieldset class="maski">
+            <legend class="sachin"><h1>Personal Details</h1></legend> 
+            
+           
+        <label class="xyz" for="FirstName"> FirstName:</label>
+        
+        <input type="text" required placeholder="Ex:sachin" id="FirstName" name="FirstName" class="personal_input"> 
         <br><br> 
 
-        <label for="MiddleName"> MiddleName</label>
-        <input type="text" placeholder="Ex:VijayKumar" id="MiddleName" name="MiddleName">
+        <label class="xyz" for="MiddleName"> MiddleName:</label>
+        
+        <input type="text" placeholder="Ex:VijayKumar" id="MiddleName" name="MiddleName" class="personal_input">
         <br><br> 
 
-        <label for="LastName"> LastName</label>
-        <input type="text" placeholder="Ex:Maskikar" id="LastName" name="LastName"> 
+        <label class="xyz"for="LastName"> LastName</label>
+       
+        <input type="text" placeholder="Ex:Maskikar" id="LastName" name="LastName" class="personal_input"> 
         <br><br> 
 
-        <label for="Age"> Age</label>
-        <input type="number" placeholder="Ex:18-22" id="age" name="age"> 
+        <label class="xyz"for="Age"> Age</label>
+      
+        <input type="number" placeholder="Ex:18-22" id="age" name="age" required class="personal_input" > 
         <br><br> 
 
-        <label for="Email"> Email</label>
-        <input type="text" placeholder="Ex:sachinmaskikar4@gmail.com" id="email" name="email"> 
+        <label class="xyz"for="Email"> Email</label>
+        
+        <input type="text" placeholder="Ex:sachinmaskikar4@gmail.com" id="email" name="email" class="personal_input"> 
         <br><br> 
 
-        <label for="DOB"> DOP</label>
-        <input type="date" id="DOB" name="DOB"> 
+        <label class="xyz"for="DOB"> DOB</label>
+
+        <input type="date" id="DOB" name="DOB" class="personal_input"> 
 
         <br><br>
-        <label for="contact">contact</label>
-
-        <input type="=text" required id="contact" name="contact" pattern="[6-9]{1}[]" >  
+        <label class="xyz"for="contact">contact</label>
+        
+        <input type="=text" required id="contact" name="contact" pattern="[6-9]{1}[0-9]{9}" class="personal_input" >  
         </fieldset>
         <br><br> 
         
-s
-       
-        <fieldset>
-            <legend><h1>Educational Details</h1></legend>
-        <label for=""> Deparment</label>
-        <br><br>
 
-        <input type="radio" id="CS" name="CS"> 
+       
+        <fieldset class="maski">
+            <legend class="sachin"><h1>Educational Details</h1></legend>
+        <label class="xyz"for="CS"> Deparment</label>
+<br>
+<br>        
+
+        <input type="radio" id="CS" name="dept"> 
         <label for="CS">CS</label>
 
-        <input type="radio" id="CS" name="CS"> 
+        <input type="radio" id="IS" name="dept"> 
         <label for="IS">IS</label>
 
-        <input type="radio" id="CS" name="CS"> 
+        <input type="radio" id="civil" name="dept"> 
         <label for="civil">Civil</label>
+        
+        <input type="radio" id="eee" name="dept"> 
+        <label for="eee">EEE</label>
         <br><br>
-
-        <label for="yop"> YOG</label>
+        <label class="xyz"for="yop"> YOG</label>
         <input list="yog" id="yop" name="yop">
         <datalist id="yog"> 
             <option>2018</option>
@@ -71,22 +128,23 @@ s
         <br><br>
 
 
-        <label for="skills"> Skills</label>
+        <label class="xyz"for="skills"> Skills</label>
         
         <br><br>
 
-        <input type="checkbox"> 
-        <label for="skills"> HTML</label>
+        <input type="checkbox" id="html"> 
+        <label for="html"> HTML</label>
 
-        <input type="checkbox"> 
-        <label for=""> CSS</label>
+        <input type="checkbox" id="css"> 
+        <label for="css"> CSS</label>
 
         </fieldset>
         <br><br>
 
-        <input type="submit">
+        <input type="submit" id=popUpYes>
 
 
     </form>
+</center>
 </body>
 </html>
